@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./styles/reset.css")
+    link(rel="stylesheet", href="./styles/style.css")
+    title Document
+  body
+    .wraper
+      .calculator#calculator
+        .calculator-screen.bg-primary
+          p.formula#formula
+          p.result#result 0
+        div(class="calculator-btn" data-value="7") 7
+        div(class="calculator-btn" data-value="8") 8
+        div(class="calculator-btn" data-value="9") 9
+        div(class="calculator-btn bg-primary" data-value="÷") ÷
+        div(class="calculator-btn" data-value="4") 4
+        div(class="calculator-btn" data-value="5") 5
+        div(class="calculator-btn" data-value="6") 6
+        div(class="calculator-btn bg-primary" data-value="×") ×
+        div(class="calculator-btn" data-value="1") 1
+        div(class="calculator-btn" data-value="2") 2
+        div(class="calculator-btn" data-value="3") 3
+        div(class="calculator-btn bg-primary" data-value="＋") ＋
+        div(class="calculator-btn" data-value="0") 0
+        div(class="calculator-btn" data-value="00") 00
+        div(class="calculator-btn" data-value=".") .
+        div(class="calculator-btn bg-primary" data-value="－") －
+        div(class="calculator-btn color-warning" data-value="clear") AC
+        div(class="calculator-btn color-warning" data-value="backspace") ⌫
+        div(class="calculator-btn linear" data-value="=") =
+  script(src="./js/index.js")

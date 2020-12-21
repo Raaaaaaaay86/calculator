@@ -1,0 +1,17 @@
+@import './variables';
+
+.bg{
+  &-primary {
+    background-color: $primary !important;
+  }
+}
+
+.color {
+  &-warning {
+    color: $warning;
+  }
+}
+
+.linear {
+  background: linear-gradient(to left, $warning2, $warning);;
+}

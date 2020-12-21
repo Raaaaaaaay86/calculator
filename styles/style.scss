@@ -1,0 +1,90 @@
+@import './variables';
+html {
+  background-color: $background;
+}
+
+body {
+  height: 100vh;
+}
+
+.wraper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 350px;
+  height: 525px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 109px 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px 8px;
+  border-radius: 20px;
+  background: $secondary;
+  overflow: hidden;
+  &-screen {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: -16px -8px 0 -8px;
+    padding: 16px 8px 0 8px;
+    user-select: none;
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    font-size: 24px;
+    border-radius: 16px;
+    user-select: none;
+    cursor: pointer;
+    &:last-of-type {
+      grid-column: span 2;
+    }
+    &:active {
+      border: 1px solid $white;
+    }
+  }
+}
+
+.formula {
+  color: $warning;
+  font-size: 16px;
+  overflow: scroll;
+  overflow-y: hidden;
+  max-width: 100%;
+  cursor: grab;
+  &::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  &:active {
+    cursor: grabbing;
+  }
+}
+.result {
+  font-size: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow: scroll;
+  overflow-y: hidden;
+  max-width: 100%;
+  color: $white;
+  cursor: grab;
+  &::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+@import './util';

@@ -1,0 +1,150 @@
+html {
+  background-color: #E8E8E8;
+}
+
+body {
+  height: 100vh;
+}
+
+.wraper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator {
+  width: 350px;
+  height: 525px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 109px 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 109px 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px 8px;
+  border-radius: 20px;
+  background: #062145;
+  overflow: hidden;
+}
+
+.calculator-screen {
+  grid-column: span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: -16px -8px 0 -8px;
+  padding: 16px 8px 0 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.calculator-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.calculator-btn:last-of-type {
+  grid-column: span 2;
+}
+
+.calculator-btn:active {
+  border: 1px solid #fff;
+}
+
+.formula {
+  color: #00C4FF;
+  font-size: 16px;
+  overflow: scroll;
+  overflow-y: hidden;
+  max-width: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.formula::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.formula:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.result {
+  font-size: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: scroll;
+  overflow-y: hidden;
+  max-width: 100%;
+  color: #fff;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.result::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.result:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.bg-primary {
+  background-color: #041936 !important;
+}
+
+.color-warning {
+  color: #00C4FF;
+}
+
+.linear {
+  background: -webkit-gradient(linear, right top, left top, from(#6C00FF), to(#00C4FF));
+  background: linear-gradient(to left, #6C00FF, #00C4FF);
+}
+/*# sourceMappingURL=style.css.map */
